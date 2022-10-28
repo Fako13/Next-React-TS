@@ -1,16 +1,24 @@
-.p {
-	margin: 0;
+.footer {
+	background: var(--primary);
+	padding: 25px 30px;
+
+	color: var(--white);
+	font-size: 16px;
+	line-height: 1.2;
+
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	gap: 10px 40px;
 }
 
-.s {
-	font-size: 14px;
-	line-height: 24px;
+.document:hover {
+	color: var(--gray-light);
 }
-.m {
-	font-size: 16px;
-	line-height: 24px;
-}
-.l {
-	font-size: 18px;
-	line-height: 29px;
+
+@media (max-width: 765px) {
+	.footer {
+		grid-template-columns: 1fr;
+		padding: 10px 15px;
+		font-size: 14px;
+	}
 }
