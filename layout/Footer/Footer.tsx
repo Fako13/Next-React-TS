@@ -7,7 +7,7 @@ export const Footer = ({className, ...props }: FooterProps): JSX.Element => {
 
 	return (
 		<footer {...props} className={cn(className, styles.footer)}>
-			<div className={styles.disclaimer}>
+			<div>
 				OwlTop © 2020 - {format(new Date(), 'yyyy')} Все права защищены
 			</div>
 			<a href="" className={styles.document} target="_blank">Пользовательское соглашение</a>
