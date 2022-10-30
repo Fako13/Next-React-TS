@@ -11,12 +11,14 @@ function Course({ menu, page, products }: CourseProps): JSX.Element {
   return (
     <>
       {products && products.length}
+		
     </>
   );
 }
 
 export default withLayout(Course);
 
+// создаем пути 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLIC_DOMAIN + 'api/top-page/find', {
     firstCategory,
@@ -27,6 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	};
 };
 
+//получаем данные
 export const getStaticProps: GetStaticProps<CourseProps> = async ({ params }: GetStaticPropsContext<ParsedUrlQuery>) => {
 	if(!params) {
 		return {
