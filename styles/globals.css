@@ -17,9 +17,11 @@ a {
 	box-sizing: border-box;
 }
 
+
 :root {
 	--black: #3B434E;
 	--gray-light: #EBEBEB;
+	--gray-dark: #787d85;
 	--primary: #7653FC;
 	--primary-hover: #603afa;
 	--white: #FFF;
