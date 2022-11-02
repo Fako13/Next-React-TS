@@ -11,17 +11,18 @@
 
 .sort {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto auto;
 	gap: 10px 40px;
 }
 
 .sort span {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: auto;
 	align-items: center;
 	gap: 0 8px;
+	cursor: pointer;
 }
 
 .sort .active  {
-	grid-template-columns: 20px 1fr;
+	grid-template-columns: 20px auto;
 }
