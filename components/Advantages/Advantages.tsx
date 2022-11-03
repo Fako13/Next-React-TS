@@ -1,7 +1,5 @@
 import styles from './Advantages.module.css';
 import { AdvantagesProps } from './Advantages.props';
-import cn from 'classnames';
-import { Card } from '..';
 import OkeyIcon from './okey.svg';
 
 
