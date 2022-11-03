@@ -3,9 +3,12 @@ import { useState } from 'react';
 import { withLayout } from '../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../interfaces/menu.interface';
+import { useRouter } from 'next/router';
 
 function Search({ menu }: SearchProps): JSX.Element {
-  const [rating, setRating] = useState<number>(4);
+  const router = useRouter();
+
+  console.log(router.query);
 
   return (
     <>
