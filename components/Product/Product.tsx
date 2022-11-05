@@ -91,7 +91,7 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 			})}>
 				{product.reviews && product.reviews.map(r => (
 					<div key={r._id}>
-						<Review key={r._id} review={r}></Review>
+						<Review review={r}></Review>
 						<Divider />
 					</div>
 				))}
