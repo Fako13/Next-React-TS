@@ -18,3 +18,17 @@
 	line-height: 22px;
 	font-family: var(--font-family);
 }
+
+.error {
+	border: 1px solid var(--red);
+}
+.errorMessage {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	color: var(--red);
+}
+
+.inputWrapper {
+	position: relative;
+}

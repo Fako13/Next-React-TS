@@ -6,6 +6,7 @@
 	background: var(--white);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
+	width: 100%;
 	font-size: 16px;
 	resize: none;
 	height: 76px;
@@ -19,4 +20,18 @@
 	color: var(--gray-placeholder);
 	line-height: 22px;
 	font-family: var(--font-family);
+}
+
+.error {
+	border: 1px solid var(--red);
+}
+.errorMessage {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	color: var(--red);
+}
+
+.textareaWrapper {
+	position: relative;
 }
