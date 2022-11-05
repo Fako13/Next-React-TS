@@ -18,7 +18,7 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 					alt={product.title}
 					width={70}
 					height={70}
-					layout='responsive' />
+					layout='fixed' />
 			</div>
 			<div className={styles.title}>
 				{product.title}
@@ -68,7 +68,7 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 					<div>{product.disAdvantages}</div>
 				</div>}
 			</div>
-			<Divider className={styles.hr} />
+			<Divider className={cn(styles.hr, styles.hr2)} />
 			<div className={styles.actions}>
 				<Button apperrance='primary'>Узнать подробнее</Button>
 				<Button apperrance='ghost' className={styles.reviewButton} arrow='right'>Читать отзывы</Button>
