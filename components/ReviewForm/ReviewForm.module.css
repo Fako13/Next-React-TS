@@ -50,6 +50,31 @@
 }
 
 
+.error {
+	background: var(--red-light);
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+	position: relative;
+}
+.errorTitle {
+	font-weight: 700;
+}
+.errorClose {
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	fill: var(--red);
+	right: 20px;
+}
+.errorClose:hover {
+	fill: var(--primary);
+}
+
+
+
 @media screen and (max-width: 1100px) {
 	.reviewForm {
 		grid-template-columns: [start] 1fr 1fr [end];
