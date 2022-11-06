@@ -1,1 +1,1 @@
-# Учебный проект на Next.js
+# Проект на Next.js, React, TS, CSS Grid
