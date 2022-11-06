@@ -78,6 +78,14 @@
 	line-height: 19px;
 }
 
+.rateTitle a {
+	color: var(--primary);
+}
+
+.rateTitle a:hover {
+	text-decoration: underline;
+}
+
 .month {
 	font-size: 14px;
 }
