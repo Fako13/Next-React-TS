@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
-import { useState } from 'react';
 import { withLayout } from '../../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../../interfaces/menu.interface';
@@ -8,7 +7,6 @@ import { ParsedUrlQuery } from 'querystring';
 import { API } from '../../helpers/api';
 
 function Type({ firstCategory }: TypeProps): JSX.Element {
-  const [rating, setRating] = useState<number>(4);
 
   return (
     <>
