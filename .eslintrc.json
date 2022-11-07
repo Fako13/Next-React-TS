@@ -5,7 +5,7 @@
 		"@typescript-eslint"
 	],
 	"rules": {
-		"@typescript-eslint/explicit-function-return-type": "warn",
+		// "@typescript-eslint/explicit-function-return-type": "warn",
 		"semi": "off",
 		"@typescript-eslint/semi": [
 			"warn"
