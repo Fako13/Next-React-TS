@@ -3,7 +3,6 @@ import { ButtonProps } from './Button.props';
 import ArrowIcon from './arrow.svg';
 import cn from 'classnames';
 import { motion, useMotionValue } from 'framer-motion';
-import { useEffect } from 'react';
 
 export const Button = ({ apperrance, arrow = 'none', children, className, ...props }: ButtonProps): JSX.Element => {
 	const scale = useMotionValue(1);

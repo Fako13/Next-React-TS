@@ -3,7 +3,7 @@
 	margin: 0;
 }
 .menu {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .firstLevel {
 	display: grid;
@@ -58,6 +58,8 @@
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 19px;
+
+	outline-offset: -1px;
 }
 
 

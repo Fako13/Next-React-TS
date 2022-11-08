@@ -21,14 +21,14 @@ a {
 :root {
 	--black: #3B434E;
 	--gray-light: #EBEBEB;
-	--gray-dark: #787d85;
+	--gray-dark: #6c7077;
 	--gray-placeholder:  #A4A4A4;
-	--primary: #7653FC;
+	--primary: #7351f5;
 	--primary-hover: #603afa;
 	--white: #FFF;
 	--red: #FC836D;
 	--red-light: #f7bbb0;
 	--green-light: #C8F8E4;
-	--green: #1DC37E;
+	--green: #127a4f;
 	--font-family: 'Noto Sans', sans-serif;
 }

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { KeyboardEvent, useContext } from 'react';
 import { AppContext } from '../../context/app.context';
 import { PageItem, FirstLevelMenuItem } from '../../interfaces/menu.interface';
 import styles from './Menu.module.css';
@@ -68,6 +68,13 @@ export const Menu = (): JSX.Element => {
 		}));
 	};
 
+	const openSecondLevelKey = (secondCategory: string, key: KeyboardEvent): void => {
+		if(key.code == 'Space' || key.code == 'Enter') {
+			key.preventDefault();
+			openSecondLevel(secondCategory);
+		} 
+	};
+
 	const buildFirstLevel = (): JSX.Element => {
 		return (
 			<>
@@ -99,8 +106,12 @@ export const Menu = (): JSX.Element => {
 						m.isOpened = true;
 					}
 					return (
-						<div key={m._id.secondCategory}>
-							<div className={styles.secondLevel} onClick={(): void => openSecondLevel(m._id.secondCategory)}>{m._id.secondCategory}</div>
+						<div  key={m._id.secondCategory}>
+							<div 
+								tabIndex={0} 
+								onKeyDown={(key: KeyboardEvent) => openSecondLevelKey(m._id.secondCategory, key)} 
+								className={styles.secondLevel} 
+								onClick={(): void => openSecondLevel(m._id.secondCategory)}>{m._id.secondCategory}</div>
 							<motion.div 
 								layout
 								className={cn(styles.secondLevelBlock)}
@@ -109,7 +120,7 @@ export const Menu = (): JSX.Element => {
 								variants={variants}
 								
 								>
-								{buildThirdLevel(m.pages, menuItem.route)}
+								{buildThirdLevel(m.pages, menuItem.route, m.isOpened ?? false)}
 							</motion.div>
 						</div>
 					);
@@ -118,7 +129,7 @@ export const Menu = (): JSX.Element => {
 		);
 	};
 
-	const buildThirdLevel = (pages: PageItem[], route: string) => {
+	const buildThirdLevel = (pages: PageItem[], route: string, isOpened: boolean) => {
 		return (
 			pages.map(p => (
 				<motion.div 
@@ -126,7 +137,7 @@ export const Menu = (): JSX.Element => {
 					variants={variantsChildren}
 					>
 					<Link  href={`/${route}/${p.alias}`}>
-						<a className={cn(styles.thirdLevel, {
+						<a tabIndex={isOpened ? 0 : -1} className={cn(styles.thirdLevel, {
 							[styles.thirdLevelActive]: `/${route}/${p.alias}` == router.asPath
 						})}>
 							{p.category}
@@ -140,9 +151,7 @@ export const Menu = (): JSX.Element => {
 
 	return (
 		<div className={styles.menu}>
-			<ul>
-				{buildFirstLevel()}
-			</ul>
+			{buildFirstLevel()}
 		</div>
 	);
 };
