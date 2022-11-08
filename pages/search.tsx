@@ -8,10 +8,9 @@ import { API } from '../helpers/api';
 function Search({ menu }: SearchProps): JSX.Element {
   const router = useRouter();
 
-  console.log(router.query);
-
   return (
     <>
+      {router.query.q}
     </>
   );
 }

@@ -19,7 +19,7 @@ export const Menu = (): JSX.Element => {
 		visible: {
 			marginBottom: 10,
 			transition: {
-				staggerChildren: 0.05,
+				staggerChildren: 0.04,
 				type: "tween",
 				duration: 0.15,
 			}
@@ -37,11 +37,11 @@ export const Menu = (): JSX.Element => {
 			height: "auto",
 			transition: {
 				height: {
-					duration: 0.4,
+					duration: 0.25,
 				},
 				opacity: {
-					duration: 0.25,
-					delay: 0.15,
+					duration: 0.15,
+					delay: 0.1,
 				},
 			},
 		},
@@ -50,10 +50,10 @@ export const Menu = (): JSX.Element => {
 			height: 0,
 			transition: {
 				height: {
-					duration: 0.4,
+					duration: 0.25,
 				},
 				opacity: {
-					duration: 0.25,
+					duration: 0.1,
 				},
 			},
 		}
