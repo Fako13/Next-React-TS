@@ -2,7 +2,8 @@
 	position: relative;
 	width: 100%;
 }
-.input {
+.input,
+.input input {
 	width: 100%;
 }
 .button {

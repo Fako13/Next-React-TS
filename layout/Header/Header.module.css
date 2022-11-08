@@ -1,16 +1,30 @@
-.p {
-	margin: 0;
+.header {
+	display: none;
+	grid-template-columns: 1fr 40px;
+	gap: 10px;
+	margin: 15px 15px 0 15px;
 }
 
-.s {
-	font-size: 14px;
-	line-height: 24px;
+.mobileMenu {
+	position: fixed;
+	z-index: 10;
+	padding: 15px;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow-y: scroll;
+	bottom: 0;
+	background: #f5f6f8;
 }
-.m {
-	font-size: 16px;
-	line-height: 24px;
+
+.menuClose {
+	position: fixed;
+	right: 15px;
+	top: 15px;
 }
-.l {
-	font-size: 18px;
-	line-height: 29px;
+
+@media (max-width: 765px) {
+	.header {
+		display: grid;
+	}
 }
