@@ -6,6 +6,7 @@ import axios from 'axios';
 import { MenuItem } from '../interfaces/menu.interface';
 import { Textarea } from '../components/Textarea/Textarea';
 import { API } from '../helpers/api';
+import { Error404 } from './404';
 
 function Home(): JSX.Element {
   const [rating, setRating] = useState<number>(4);
