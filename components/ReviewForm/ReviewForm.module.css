@@ -40,10 +40,17 @@
 	position: absolute;
 	top: 20px;
 	cursor: pointer;
-	width: 10px;
-	height: 10px;
+
 	fill: var(--green);
 	right: 20px;
+	border: none;
+	padding: 0;
+	background: none;
+}
+.close svg,
+.errorClose svg {
+	width: 10px;
+	height: 10px;
 }
 .close:hover {
 	fill: var(--primary);
@@ -64,8 +71,10 @@
 	position: absolute;
 	top: 20px;
 	cursor: pointer;
-	width: 10px;
-	height: 10px;
+	padding: 0;
+	border: none;
+	background: none;
+
 	fill: var(--red);
 	right: 20px;
 }

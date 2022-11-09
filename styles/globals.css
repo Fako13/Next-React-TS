@@ -17,6 +17,12 @@ a {
 	box-sizing: border-box;
 }
 
+.viualyHidden {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+}
 
 :root {
 	--black: #3B434E;

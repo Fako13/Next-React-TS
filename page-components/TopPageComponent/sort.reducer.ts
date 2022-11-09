@@ -23,7 +23,7 @@ export const sortReducer = (state: SortReducerState, action: SortAction): SortRe
 		case 'reset':
 			return {
 				sort: SortEnum.Rating,
-				products: action.initialState
+				products: action.initialState.sort((a, b) => a.initialRating > b.initialRating ? -1 : 1) 
 			};
 		default:
 			throw new Error('Неверный тип сортировки');

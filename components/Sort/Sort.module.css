@@ -26,3 +26,6 @@
 .sort .active  {
 	grid-template-columns: 20px auto;
 }
+.sortName {
+	display: none;
+}
