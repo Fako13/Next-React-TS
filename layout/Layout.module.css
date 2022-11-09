@@ -1,13 +1,14 @@
 .wrapper {
 	display: grid;
 	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
+
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	gap: 40px 30px;
-	grid-template-areas: 
-	". header header ."
-	". sidebar body ."
-	"footer footer footer footer";
+	grid-template-areas:
+		". header header ."
+		". sidebar body ."
+		"footer footer footer footer";
 }
 
 .header {
@@ -20,6 +21,7 @@
 
 .body {
 	grid-area: body;
+
 	outline: none;
 }
 
@@ -28,16 +30,21 @@
 }
 
 .skipLink {
-	display: block;
 	position: fixed;
+	top: 0;
 	left: 100px;
-	top: 0px;
+
+	display: block;
 	overflow: hidden;
-	cursor: pointer;
+
 	height: 0;
-	background: var(--primary);
+
+	cursor: pointer;
+
 	color: var(--white);
+	background: var(--primary);
 }
+
 .displayed {
 	height: auto;
 }
@@ -46,16 +53,17 @@
 	.wrapper {
 		grid-template-columns: minmax(320px, 1fr);
 		gap: 10px;
-		grid-template-areas: 
+		grid-template-areas:
 			"header"
 			"body"
 			"footer";
 	}
+
 	.body {
 		padding: 0 15px;
 	}
+
 	.sidebar {
 		display: none !important;
 	}
-
 }

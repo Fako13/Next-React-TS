@@ -1,14 +1,15 @@
 .reviewForm {
+	display: grid;
+	align-items: center;
+
 	font-size: 14px;
 	line-height: 24px;
-
-	display: grid;
 	grid-template-columns: [start] auto 1fr auto  [end];
 	gap: 20px 30px;
-	align-items: center;
 }
 
-.textarea, .submit {
+.textarea,
+.submit {
 	grid-column: start / end;
 }
 
@@ -23,77 +24,92 @@
 .rating {
 	display: grid;
 	grid-template-columns: auto 1fr;
-	gap: 20px ;
+	gap: 20px;
 }
 
 .success {
-	background: var(--green-light);
-	padding: 20px;
-	border-radius: 5px;
-	margin-top: 20px;
 	position: relative;
+
+	margin-top: 20px;
+	padding: 20px;
+
+	border-radius: 5px;
+	background: var(--green-light);
 }
+
 .successTitle {
 	font-weight: 700;
 }
+
 .close {
 	position: absolute;
 	top: 20px;
+	right: 20px;
+
+	padding: 0;
+
 	cursor: pointer;
 
-	fill: var(--green);
-	right: 20px;
 	border: none;
-	padding: 0;
 	background: none;
+
+	fill: var(--green);
 }
+
 .close svg,
 .errorClose svg {
 	width: 10px;
 	height: 10px;
 }
+
 .close:hover {
 	fill: var(--primary);
 }
 
-
 .error {
-	background: var(--red-light);
-	padding: 20px;
-	border-radius: 5px;
-	margin-top: 20px;
 	position: relative;
+
+	margin-top: 20px;
+	padding: 20px;
+
+	border-radius: 5px;
+	background: var(--red-light);
 }
+
 .errorTitle {
 	font-weight: 700;
 }
+
 .errorClose {
 	position: absolute;
 	top: 20px;
-	cursor: pointer;
+	right: 20px;
+
 	padding: 0;
+
+	cursor: pointer;
+
 	border: none;
 	background: none;
 
 	fill: var(--red);
-	right: 20px;
 }
+
 .errorClose:hover {
 	fill: var(--primary);
 }
-
-
 
 @media screen and (max-width: 1100px) {
 	.reviewForm {
 		grid-template-columns: [start] 1fr 1fr [end];
 	}
+
 	.title {
 		justify-self: normal;
 	}
+
 	.rating {
 		grid-column: start / end;
-
 	}
 }
 

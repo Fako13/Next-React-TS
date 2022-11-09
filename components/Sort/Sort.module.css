@@ -1,13 +1,16 @@
 .sortIcon {
 	display: none;
 }
+
 .active {
-	font-weight: 700;
 	color: var(--primary);
-} 
+
+	font-weight: 700;
+}
+
 .active .sortIcon {
 	display: block;
-} 
+}
 
 .sort {
 	display: grid;
@@ -18,14 +21,17 @@
 .sort span {
 	display: grid;
 	grid-template-columns: auto;
+
 	align-items: center;
 	gap: 0 8px;
+
 	cursor: pointer;
 }
 
-.sort .active  {
+.sort .active {
 	grid-template-columns: 20px auto;
 }
+
 .sortName {
 	display: none;
 }

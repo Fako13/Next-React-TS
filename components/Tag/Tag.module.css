@@ -3,6 +3,7 @@
 
 	box-sizing: border-box;
 	margin-right: 5px;
+
 	border-radius: 20px;
 }
 
@@ -12,6 +13,7 @@
 	font-size: 12px;
 	line-height: 12px;
 }
+
 .m {
 	padding: 5px 10px;
 
@@ -22,31 +24,33 @@
 .ghost {
 	border: 1px solid var(--gray-light);
 }
+
 .red {
 	color: var(--white);
-	background: #de0000;
+	background: #DE0000;
 
 	font-weight: bold;
 }
+
 .gray {
 	color: var(--white);
-	background: #b3c0d9;
+	background: #B3C0D9;
 
 	font-weight: bold;
 }
+
 .green {
 	color: var(--green);
 	background: var(--green-light);
 
 	font-weight: bold;
 }
+
 .primary {
 	color: var(--primary);
-	background: none;
 
 	border: 1px solid var(--primary);
+	background: none;
 
 	font-weight: bold;
 }
-
-
