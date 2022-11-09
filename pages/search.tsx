@@ -5,7 +5,7 @@ import { MenuItem } from '../interfaces/menu.interface';
 import { useRouter } from 'next/router';
 import { API } from '../helpers/api';
 
-function Search({ menu }: SearchProps): JSX.Element {
+function Search(): JSX.Element {
   const router = useRouter();
 
   return (

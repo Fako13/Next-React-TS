@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './Product.module.css';
 import { ProductProps } from './Product.props';
 import cn from 'classnames';
@@ -52,8 +53,7 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 						src={process.env.NEXT_PUBLIC_DOMAIN_IMAGE + product.image}
 						alt={product.title}
 						width={70}
-						height={70}
-						layout='fixed' />
+						height={70} />
 				</div>
 				<div className={styles.title}>
 					{product.title}
