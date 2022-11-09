@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: docker.pkg.github.com
-          name: docker.pkg.github.com/fako13/Next-React-TS/Next-React-TS
+          name: docker.pkg.github.com/Fako13/Next-React-TS/Next-React-TS
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: "develop"
